@@ -5,7 +5,7 @@ pipeline {
     agent {
         docker {
             image 'golang:1.8.0-alpine'
-            args '-v ${pwd()}:/go/src/github.com/alstard/GoJenkins'
+            args '-v /go/src/github.com/alstard/GoJenkins:/go/src/github.com/alstard/GoJenkins'
         }
     }
 
