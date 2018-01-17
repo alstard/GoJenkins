@@ -23,7 +23,5 @@ pipeline {
                         sh "cd /go/src/github.com/alstard/GoJenkins && GOOS=linux GOARCH=amd64 go build -o binaries/amd64/0.1.0/linux/GoJenkins-0.1.0.linux.amd64"
                     }
                 }
-            }
-        }
     }
 }
